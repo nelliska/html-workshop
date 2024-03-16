@@ -1,5 +1,7 @@
 /* viide elemendile st muudame kõiki selliseid elemente */
 body {
+
+    background-color: lavenderblush;
     display: flex;
     padding: 1em;
     flex-direction: column;
@@ -25,8 +27,16 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
+.kass1 {
+    color: #FF52A5FF;
+    text-align: left;
+    background-color: yellow;
+    letter-spacing: 5px;
+}
 .card {
+    animation: varv;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     width: 20em;
     height: 25em;
     display: flex;
@@ -34,6 +44,11 @@ body {
     align-items: center;
     background-color: #D9D9D9;
     padding: 5em 1.5em 1.5em;
+}
+@keyframes varv {
+    0% { background-color: black}
+    50% { background-color: white }
+    100% { background-color: black }
 }
 .icon {
     max-width: 10em;
